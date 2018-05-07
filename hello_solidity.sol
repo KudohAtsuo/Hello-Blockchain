@@ -5,7 +5,7 @@ contract HelloSolidity{
   string comment1;
   address owner;
 
-///@ dev Cnstractor
+///@ dev Cnstructor
   function HelloSolidity{
     comment1="HelloSolidity";
     owner=msg.sender;
