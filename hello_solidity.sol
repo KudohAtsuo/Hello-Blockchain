@@ -2,12 +2,12 @@ pragma solidity ^0.4.23;
 ///@ title Test contract :)
 ///@ dev Comment represents greeting message. Owener may not be necessary.
 contract HelloSolidity{
-  string comment1;
-  address owner;
+  string public comment1;
+  address public owner;
 
 ///@ dev Cnstructor
-  function HelloSolidity{
-    comment1="HelloSolidity";
+function HelloSolidity(string _msg1){
+    comment1=_msg1;
     owner=msg.sender;
   }
 
